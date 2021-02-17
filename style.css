@@ -1,0 +1,95 @@
+.container {
+    position: relative;
+    width: 600px;
+    height: 700px;
+    margin: auto auto;
+    background-color: black;
+}
+
+.monster {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    z-index: 2;
+    
+}
+.base {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    opacity: 0;
+}
+
+.container:hover .monster {
+    animation-name: move;
+    animation-duration: 10s;
+}
+
+.container:hover .text {
+    animation-name: text;
+    animation-duration: 3s;
+    
+}
+
+.container:hover .text2 {
+    animation-name: text ;
+    animation-duration: 3s;
+    animation-delay: 1.7s;
+}
+
+.container:hover .text3 {
+    animation-name: text ;
+    animation-duration: 3s;
+    animation-delay: 3.2s;
+}
+
+.container:hover .text4 {
+    animation-name: text;  
+    animation-duration: 3s;
+    animation-delay: 4.7s;
+}
+
+.container:hover .text5 {
+    animation-name: text;  
+    animation-duration: 3s;
+    animation-delay: 6.2s;
+}
+
+.container:hover .text6 {
+    animation-name: text;  
+    animation-duration: 3s;
+    animation-delay: 7.7s;
+}
+
+.container:hover .text7 {
+    animation-name: text;  
+    animation-duration: 3s;
+    animation-delay: 9.2s;
+}
+
+@keyframes text {
+0% {opacity: 0}
+100% {opacity: 1}
+}
+
+
+
+@keyframes move {
+    0% {transform: translate(0,0);}
+    10% { transform: translate(500px, 0);}
+    15% { transform: translate(500px, 100px);}
+    25% {transform: translate(0px, 100px);}
+    30% { transform: translate(0px, 200px);}
+    40% { transform: translate(500px, 200px);}
+    45% { transform: translate(500px, 300px);}
+    55% {transform: translate(0px, 300px);}
+    60% { transform: translate(0px, 400px);}
+    70% { transform: translate(500px, 400px);}
+    75% {transform: translate(500px, 500px);}
+    85% { transform: translate(0px, 500px);}
+    90% { transform: translate(0px, 600px);}
+    100% { transform: translate(500px, 600px);}
+}
+
